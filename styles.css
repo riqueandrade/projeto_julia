@@ -717,3 +717,80 @@ header nav ul li a:hover,
 .footer-section ul li a:hover {
     color: #e6db45;
 }
+
+/* Responsividade para imagens */
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .image {
+        width: 90%;
+        /* Reduz ligeiramente a largura em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        width: 100%;
+        /* Ocupa toda a largura em telas muito pequenas */
+    }
+}
+
+/* Ajustes para a imagem clicável */
+.clickable-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.clickable-image.expanded {
+    max-width: 90%;
+    /* Limita o tamanho máximo quando expandida */
+}
+
+@media (max-width: 768px) {
+    .clickable-image {
+        max-width: 80%;
+        /* Reduz o tamanho em telas menores */
+    }
+
+    .clickable-image.expanded {
+        max-width: 100%;
+        /* Ocupa toda a largura quando expandida em telas menores */
+    }
+}
+
+/* Ajustes para o container de imagem e vídeo */
+.img-video {
+    width: 100%;
+    max-width: 600px;
+    /* Ajuste conforme necessário */
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .img-video {
+        max-width: 90%;
+    }
+}
+
+/* Ajustes para o logo */
+.logo {
+    max-width: 250px;
+    height: auto;
+    margin-right: 0;
+    /* Remove a margem direita para melhor alinhamento em telas menores */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 200px;
+        /* Reduz o tamanho do logo em telas menores */
+        margin: 0 auto 15px;
+        /* Centraliza o logo e adiciona espaço abaixo */
+    }
+}
